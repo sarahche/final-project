@@ -1,5 +1,5 @@
 
-// Creates typing effect on index page
+
 function onload () {
   new TypeIt("#typedText", {
   speed: 75,
@@ -30,8 +30,6 @@ function onload () {
   .type("portfolio site")
   .go();
 }
-
-// Creates progress scroll bar for project pages
 
 let progress = document.getElementById('progressbar');
 

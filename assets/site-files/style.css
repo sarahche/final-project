@@ -4,7 +4,6 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
 /* Remove horizontal scrolling  */
 body {
     overflow-x: hidden;
@@ -117,6 +116,7 @@ body {
 }
 
 /* Styling for the navbar */
+
 .container-fluid {
 	background: none;
 	margin-left: 20px;
@@ -167,7 +167,7 @@ li {
 	font-size: 22px;
 	margin-top: 75px;
 	margin-left: 50px;
-	display: inline-block;
+	display: inline-block
 	background-color: transparent;
 	color: #4B4B4B;
 }
@@ -224,7 +224,7 @@ li {
 }
 
 .project2 img {
-	
+	size: 90%;
 	max-height: 550px;
 	margin-left: auto;
 	margin-right: auto;
@@ -243,7 +243,8 @@ li {
 
 .carousel-control.left, .carousel-control.right {
   background: none !important;
-  filter: none !important;
+  filter:none !important;
+  filter: progid: none !important;
   outline: 0;
   opacity: 1;
   margin-top: -15%;
@@ -290,7 +291,7 @@ li {
 	}
 }
 
-#progressbar before {
+#progressbar: before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -301,7 +302,7 @@ li {
 	filter: blur(10px);
 }
 
-#progressbar after {
+#progressbar: after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -313,12 +314,12 @@ li {
 }
 
 
-/* Styling for the about page */
+/* Styling for the about */
 .about-container .col-sm-8 p {
 	font-size: 22px;
 	margin-top: 75px;
 	margin-left: 50px;
-	display: inline-block;
+	display: inline-block
 	background-color: transparent;
 	color: #4B4B4B;
 }
@@ -362,6 +363,7 @@ li {
 }
 
 /* Styling for the project steps */
+
 .project-steps {
 	color: black;
 	margin-top: 50px;
