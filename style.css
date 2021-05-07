@@ -1,0 +1,369 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Styling for the landing page */
+.landing > p {
+	font-size: 20px;
+	letter-spacing: 2px;
+	border: 3px solid #4B4B4B;
+	color: #4B4B4B;
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	text-align: center;
+	width: 45%;
+}
+
+.landing {
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient( #DDE9FF, #A7B6F2, #A7B6F2, #DDE9FF, #A7B6F2, #DDE9FF);
+	background-size: 500% 500%;
+	position: relative;
+}
+
+.start {
+	font-size: 20px;
+	letter-spacing: 2px;
+	border: 2px solid #4B4B4B;
+	position: absolute;
+	opacity: 0;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+	text-align: center;
+	width: auto;
+	border-radius: 0px;
+	background-color: transparent;
+	text-decoration: none;
+	color: #4B4B4B;
+	animation: transitionIn 2s;
+	animation-fill-mode: forwards;
+	animation-delay: 18s;
+}
+
+@keyframes transitionIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.7;
+		background-color: #4B4B4B;
+		color: white;
+	}
+}
+
+/* Styling for the background */
+.main {
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient( -45deg, #A7B6F2, #DDE9FF, #A7B6F2, #DDE9FF);
+	background-size: 500% 750%;
+	position: relative;
+	animation: change 15s ease-in-out infinite;
+}
+
+@keyframes change {
+	0%{
+		background-position: 0 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0 50%;
+	}
+}
+
+.port-projects-bg {
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	background: linear-gradient( #DDE9FF, #A7B6F2, #A7B6F2, #DDE9FF, #A7B6F2, #DDE9FF);
+	background-size: 500% 500%;
+	position: relative;
+}
+
+/* Styling for the navbar */
+
+.container-fluid {
+	background: none;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar-brand {
+	color: #4B4B4B;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: transparent;
+  text-decoration: none;
+  color: #7386D3 !important;
+}
+
+.navbar-header > a:hover, .navbar-header > a:focus {
+  background-color: transparent;
+  text-decoration: none;
+  color: #7386D3 !important;
+}
+
+.navbar .navbar-nav > .nav-link > a,
+.navbar .navbar-nav > .nav-link > a:hover,
+.navbar .navbar-nav > .nav-link > a:focus {
+    color: yellow;
+    background-color: #AA0000;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #4B4B4B;
+}
+
+
+li {
+	margin-right: 20px;
+	margin-top: 25px;
+	font-size: 15px;
+	color: black;
+}
+
+
+/* Styling for the homepage text */
+.intro-row .col-sm-6 p {
+	font-size: 22px;
+	margin-top: 75px;
+	margin-left: 50px;
+	display: inline-block
+	background-color: transparent;
+	color: #4B4B4B;
+}
+
+.intro-row .col-sm-6 {
+	background-color: transparent;
+	height: 200px;
+}
+
+.intro-text span { 
+	color: #7386D3; 
+	background-color: transparent;
+}
+
+/* Styling for the homepage images */
+.project1 .image-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 110% ;
+	max-width: 550px;
+	display: block;
+	height: auto;
+}
+
+.project1 img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90% ;
+	max-width: 550px;
+	display: block;
+	height: auto;
+	position: relative;
+}
+
+
+.home-subheading {
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	justify-content: center;
+	font-weight: lighter;
+
+}
+
+.project1 a:hover {
+	text-decoration: none;
+}
+
+.home-desc {
+	font-size: 15px;
+	color: #4B4B4B;
+	text-align: center;
+	justify-content: center;
+}
+
+.project2 img {
+	size: 90%;
+	max-height: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	height: auto;
+}
+
+.project2 a:hover {
+	text-decoration: none;
+}
+
+.container-sm {
+	display: block;
+	text-align: center;
+}
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter:none !important;
+  filter: progid: none !important;
+  outline: 0;
+  opacity: 1;
+  margin-top: -15%;
+}
+
+.carousel-control.left {
+	margin-left: -6%;
+}
+
+.carousel-control.right {
+	margin-right: -6%;
+}
+
+/* Styling for the scrollbar */
+::-webkit-scrollbar {
+	width: 0;
+}
+
+#scrollPath {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+
+#progressbar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: linear-gradient(to top, white, blue);
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0%, 100% {
+		filter: hue-rotate(210deg);
+	}
+	50% {
+		filter: hue-rotate(270deg);
+	}
+}
+
+#progressbar: before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, white, pink);
+	filter: blur(10px);
+}
+
+#progressbar: after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, red, green);
+	filter: blur(30px);
+}
+
+/* Styling for the project heading and details */
+.project-heading {
+	margin-left: 30px;
+	color: black;
+}
+
+.project-heading > h1 {
+	font-size: 40px;
+}
+
+.descriptor {
+	color: #4B4B4B;
+}
+
+.details {
+	color: #7386D3;
+}
+
+.project-description {
+	margin-top: 30px;
+	background-color: white;
+	padding: 10px;
+	margin-right: 30px;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+/* Styling for the project steps */
+
+.project-steps {
+	color: black;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-size: 18px;
+}
+
+.step-num {
+	text-align: left;
+	font-size: 24px;
+}
+
+.desc {
+	text-align: left;
+	padding-left: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	padding-right: 50px;
+}
+
+.numbering {
+	font-size: 18px;
+	color: #7386D3;
+}
+
+.project-steps > .container-sm {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.bullet-list {
+	padding-left: 20px;
+}
+
+.project-steps img {
+	width: 80%;
+	max-width: 600px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+
