@@ -5,6 +5,9 @@
 	box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
 /* Styling for the landing page */
 .landing > p {
 	font-size: 20px;
