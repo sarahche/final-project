@@ -19,13 +19,6 @@ function onload () {
   .move(-1)
   .delete(26)
   .type("hci")
-
-  .break({delay: 500})
-  .type("programming usable interfaces ")
-  .break({delay: 500})
-  .move(-1)
-  .delete(30)
-  .type("pui final project")
   .break({delay: 500})
   .type("portfolio site")
   .go();
